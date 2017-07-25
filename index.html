@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reserva</title>
+	<link href="assets/css/main.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body bgcolor="#F2D7D5">
+	
+	<font face="Century Gothic">
+		<h1 align="center">Reserva de Asientos</h1>
+		<img src="assets/imag/busic.svg" width="150px" align="right">
+		<div class="row" align="center">
+		<div class="col s12 m5">
+			<div class="card-panel teal">
+				<span class="white-tex">Para la reserva de un asiento presione primero el asiento y luego llene el formulario</span>
+			</div>
+		</div>
+	</div>
+		<table id="asientos" align="center">
+			<tr>
+				<td>04</td><td>08</td><td>12</td><td>16</td><td>20</td><td>24</td><td>28</td><td>32</td>
+			</tr>
+			<tr>
+				<td>03</td>	<td>07</td><td>11</td><td>15</td><td>19</td><td>23</td><td>27</td><td>31</td>
+			</tr>
+			<tr>
+				<td>02</td><td>06</td><td>10</td><td>14</td><td>18</td><td>22</td><td>26</td><td>30</td>
+			</tr>
+			<tr>
+				<td>01</td><td>05</td><td>09</td><td>13</td><td>17</td><td>21</td><td>25</td><td>29</td>
+			</tr>
+		</table><br>
+
+		<div id="mostrar" align="center"> <strong>Seleccione asiento</strong> </div><br>
+
+		<div align="center">
+			<label for="btnBuscar"><strong>DNI</strong></label>
+			<input type="text" name="dniBuscar" id="dniBuscar" size="8">
+			<button id="btnBuscar">BUSCAR</button>
+		</div><br>
+
+		<div id="registro" align="center">
+			<label for="nombre"><strong>Nombre</strong></label>
+			<input type="text" name="nombre" placeholder="Nombre" id="nombre" required="required"><br><br>
+			<label for="apellido"><strong>Apellido</strong></label>
+			<input type="text" name="apellido" placeholder="Apellido" id="apellido" required="required"><br><br>
+			<label for="dni"><strong>DNI</strong></label>
+			<input type="text" name="dni" placeholder="DNI" size="8" id="dni" required="required"><br><br>
+		</div>
+
+	</font>
+
+	<div align="center">
+		<button id="btnReservar">RESERVAR</button>
+		<button id="btnCancelar">CANCELAR</button><br><br>
+		<button id="btnListar" >LISTAR</button>
+	</div>
+	
+	<font face="Century Gothic">
+		<div id="resultado" align="center"></div>
+	</font>
+	
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
